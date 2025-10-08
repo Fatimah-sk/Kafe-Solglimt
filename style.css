@@ -1,0 +1,334 @@
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color:antiquewhite;
+    display: flex;
+    flex-direction: column;
+    }
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+}
+
+header{
+    color:rgb(71, 38, 14);
+    position: fixed;
+    background-color: antiquewhite;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;    
+}
+.head{
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.header-meny{
+    font-size: large;
+}
+nav ul{
+    margin-top: 50px;
+    margin-right: 100px;
+    display: flex;
+    gap: 30px;
+}
+ul{
+    list-style: none;
+}
+.meny ul{
+    font-family: "Playfair Display", serif;
+
+}
+.link{
+    text-decoration: none;
+    color:rgb(71, 38, 14);
+    transition: all 0.3s ease;
+}
+.link:hover{
+    text-decoration: underline;
+}
+#dagensrett{
+    position:relative;
+}
+#dagensrett img{
+    width: 650px;
+    height: 600px;
+    border-radius: 15px;
+    display: block;
+    margin: 20px;
+}
+.beskrivelse-dagensrett{
+     background-color:rgb(241, 214, 180);
+     width: fit-content;
+     height: fit-content;
+     padding-left: 10px;
+     padding-right: 10px;
+     border-radius: 15px;
+     flex-direction: column;
+     position: absolute;
+     bottom: 0px;
+     left:0px;
+     margin: 20px;
+
+ }
+ .beskrivelse-dagensrett h1 h2{
+    margin-bottom: 0;
+ }
+.meny{
+    background-color:rgb(241, 214, 180) ;
+    display:inline-block;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    scroll-margin-top: 130px;
+}
+.meny h2{
+    text-align: center;
+}
+.meny h3{
+    text-align: center;
+
+}
+.måltider{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+}
+.måltid{
+    background-color: antiquewhite;
+    border-radius: 20px;
+    width: 350px;
+    height:350px ;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    scroll-margin-top:130px ;
+
+}
+.main{
+    margin-top: 20px;
+    background-color:rgb(71, 38, 14);
+    border-radius: 20px;
+    width: 95%;
+    height: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#dagensrett{
+    scroll-margin-top:140px;
+}
+footer{
+    color:rgb(71, 38, 14);
+    text-align: center;
+}
+footer img{
+    width:250px;
+    height:250px;
+}
+footer a{
+    color:rgb(71, 38, 14);
+}
+
+
+
+.container{
+    margin-top: 20px;
+    background-color:rgb(71, 38, 14);
+    border-radius: 20px;
+    width: 95%;
+    height: 100%;
+    padding: 20px;
+    justify-content: left;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+    scroll-margin-top: 130px;
+}
+.container h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.måltid-boks img{
+    width: 300px;
+    height: 300px;
+}
+.måltid-boks{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+}
+.bg-måltid{
+    background-color:rgb(241, 214, 180);
+    border-radius: 20px;
+    width: 300px;
+    height:300px ;
+
+    display: block;
+    margin: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.måltid-beskrivelse{
+     background-color:antiquewhite;
+     color: rgb(71, 38, 14);
+     width: fit-content;
+     height: fit-content;
+     padding-left: 10px;
+     padding-right: 10px;
+     border-radius: 15px;
+     flex-direction: column;
+     position: absolute;
+     bottom: 0px;
+     left:0px;
+     font-family: "Playfair Display", serif;
+}
+#kontakt{
+    scroll-margin-top: 125px;
+}
+
+
+
+
+
+
+.alle-måltider {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 60px 10%;
+}
+.alle-måltider h2{
+    font-weight:100;
+}
+.måltid-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  scroll-margin-top: 150px;
+}
+.måltid-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.måltid-image img {
+  width: 400px;
+  height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+.måltid-image{
+width: 450px;
+height: 450px;
+}
+.måltid-text {
+  max-width: 500px;
+  text-align: left;
+  color: rgb(71, 38, 14);
+
+}
+.måltid-item:nth-child(even) .måltid-text {
+  text-align: left;
+}
+
+hr{
+    height: 4px;
+    background-color: rgb(71, 38, 14);
+    width: 90%;
+}
+
+
+
+
+/* ==== Responsiv visning for mobil (bevarer rekkefølge) ==== */
+@media (max-width: 768px) {
+
+  /* يخلي كل العناصر تصير بعمود واحد */
+  body, main, .alle-måltider, .måltid-item, .måltider, .måltid-boks {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* يخلي الصور تاخد عرض أصغر من الشاشة */
+  img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  /* النصوص تاخد عرض الشاشة بدون تزاحم */
+  .måltid-text, .beskrivelse-dagensrett, .måltid-beskrivelse {
+    max-width: 95%;
+    text-align: center;
+  }
+
+  /* تعديل شريط التنقل */
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .head {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  /* تقليل الحشوات والمسافات الكبيرة */
+  .alle-måltider {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .måltid-image img {
+    width: 300px;
+    height: auto;
+  }
+
+  footer img {
+    width: 150px;
+    height: auto;
+  }
+}
