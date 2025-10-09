@@ -295,7 +295,9 @@ hr{
     align-items: center;
     justify-content: center;
   }
-
+.måltid{
+    padding-bottom: 2rem;
+}
   img {
     max-width: 90%;
     height: auto;
@@ -385,6 +387,11 @@ hr{
   .måltid-item:nth-child(even) {
     flex-direction: column; 
   }
-
+  .måltid-item:nth-child(even) .måltid-text{
+    flex-direction: column; 
+  }
+.måltid-item:nth-child(even) .måltid-text {
+  text-align: left;
+}
 
 }
