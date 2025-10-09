@@ -295,7 +295,9 @@ hr{
     align-items: center;
     justify-content: center;
   }
-  
+  #dagensrett img{
+    width: 
+  }
   img {
     max-width: 90%;
     height: auto;
@@ -393,4 +395,91 @@ hr{
   text-align: left;
 }
 
+}
+
+
+
+
+/* -------- Bursdag Page -------- */
+.bursdag-banner {
+  background-color: rgb(241, 214, 180);
+  color: rgb(71, 38, 14);
+  text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 1rem;
+  margin-top: 8rem;
+  width: 90%;
+}
+
+.bursdag-banner h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.bursdag-tjenester {
+  background-color: rgb(71, 38, 14);
+  color: antiquewhite;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  margin: 2rem auto;
+  line-height: 1.8;
+}
+
+.bursdag-tjenester ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bursdag-tjenester li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.bursdag-bilder {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.bursdag-bilder img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.bursdag-bestill {
+  text-align: center;
+  background-color: rgb(241, 214, 180);
+  color: rgb(71, 38, 14);
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  width: 90%;
+  margin: 2rem auto 5rem;
+}
+
+.bursdag-btn {
+  display: inline-block;
+  background-color: rgb(71, 38, 14);
+  color: antiquewhite;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.bursdag-btn:hover {
+  background-color: rgb(51, 25, 8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bursdag-banner h1 { font-size: 1.6rem; }
+  .bursdag-bilder img { width: 100%; height: auto; }
 }
