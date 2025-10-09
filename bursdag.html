@@ -3,21 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bursdagsfeiring - Kafé Solglimt</title>
+  <title>Bursdagsfeiring</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lora:wght@400&display=swap">
 </head>
 
 <body>
-  <!-- HEADER -->
   <header>
     <div class="head">
       <span class="logo">
         <a href="index.html#home" class="link"><img src="images/logo1.png" alt="Logo"></a>
         <a href="index.html#home" class="link"><h1>Kafé Solglimt</h1></a>
       </span>
-
-      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 
       <nav id="navMenu">
         <ul class="header-meny">
@@ -31,7 +28,6 @@
     <hr>
   </header>
 
-  <!-- MAIN -->
   <main>
     <section class="bursdag-banner">
       <h1>🎉 Feir bursdagen din hos Kafé Solglimt 🎂</h1>
@@ -39,7 +35,14 @@
       Enten det er for barn, familie eller venner — vi sørger for at alt blir perfekt!</p>
     </section>
 
-    <section class="bursdag-tjenester">
+     <section class="bursdag-bilder">
+      <img src="images/bursdag1.png" alt="Feiring hos Kafé Solglimt">
+      <img src="images/bursdag2.png" alt="Gjestene koser seg">
+      <img src="images/bursdag3.png" alt="Kake og dekorasjon">
+    </section>
+
+    <div class="bursdag-tjenester">
+      <section>
       <h2>Hva vi tilbyr:</h2>
       <ul>
         <li>🎂 Egendesignet bursdagskake</li>
@@ -49,13 +52,11 @@
         <li>🍴 Valg fra vår meny – kaffe, bakverk og lette retter</li>
       </ul>
       <p>Vi hjelper deg med alt fra pynt til servering slik at du kan slappe av og nyte dagen!</p>
-    </section>
+      </section>
+      <img src="images/bursdag4.png" alt="Kvinne blåser ut lys på bursdagkake">
+    </div>
 
-    <section class="bursdag-bilder">
-      <img src="images/bursdag1.png" alt="Feiring hos Kafé Solglimt">
-      <img src="images/bursdag2.png" alt="Gjestene koser seg">
-      <img src="images/bursdag3.png" alt="Kake og dekorasjon">
-    </section>
+
 
     <section class="bursdag-bestill">
       <h2>Bestill din bursdagsfeiring i dag!</h2>
@@ -64,7 +65,6 @@
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer id="kontakt">
     <hr>
     <h2>Kontakt oss</h2>
@@ -74,18 +74,11 @@ Storgata 91, 3912 Porsgrunn
 ✉️ <a href="mailto:hei@kafesolglimt.no">hei@kafesolglimt.no</a>
 
 Åpningstider:
-Man–Fre: 08–18
-Lør: 09–16
+Man-Fre: 08-18
+Lør: 09-16
 Søn: Stengt</h3></pre>
     <a href="#top"><img src="images/logo2.png" alt="Logo"></a>
   </footer>
 
-  <!-- JS -->
-  <script>
-  function toggleMenu() {
-    const nav = document.getElementById("navMenu");
-    nav.classList.toggle("active");
-  }
-  </script>
 </body>
 </html>

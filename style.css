@@ -295,9 +295,8 @@ hr{
     align-items: center;
     justify-content: center;
   }
-  #dagensrett img{
-    width: 
-  }
+
+
   img {
     max-width: 90%;
     height: auto;
@@ -407,7 +406,7 @@ hr{
   text-align: center;
   padding: 3rem 1rem;
   border-radius: 1rem;
-  margin-top: 8rem;
+  margin-top: 4rem;
   width: 90%;
 }
 
@@ -425,6 +424,11 @@ hr{
   width: 90%;
   margin: 2rem auto;
   line-height: 1.8;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  width: 90%;
+  height: fit-content;
 }
 
 .bursdag-tjenester ul {
@@ -436,22 +440,43 @@ hr{
   margin: 0.5rem 0;
   font-size: 1.1rem;
 }
+.bursdag-tjenester img{
+  width:30rem ;
+  height: 25rem;
+  border-radius: 1rem;
+}
 
 .bursdag-bilder {
   display: flex;
-  justify-content: center;
+  justify-content: space-around; /* ← يوزّع الصور بتساوي */
+  align-items: flex-end;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  padding: 2rem;
+  padding: 2rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10rem;
 }
 
 .bursdag-bilder img {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 600px;
   object-fit: cover;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* ترتيب متدرّج بالأطوال */
+.bursdag-bilder img:nth-child(1) {
+  transform: translateY(12rem);
+}
+.bursdag-bilder img:nth-child(2) {
+  transform: translateY(6rem);
+}
+.bursdag-bilder img:nth-child(3) {
+  transform: translateY(0);
+}
+
 
 .bursdag-bestill {
   text-align: center;
@@ -481,5 +506,23 @@ hr{
 /* Responsive */
 @media (max-width: 768px) {
   .bursdag-banner h1 { font-size: 1.6rem; }
-  .bursdag-bilder img { width: 100%; height: auto; }
+
+.bursdag-tjenester{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+  .bursdag-bilder {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .bursdag-bilder img {
+    width: 100%;
+    height: 100%;
+    transform: none;
+    margin-bottom: 2rem;
+  }
 }
