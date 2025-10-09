@@ -473,6 +473,7 @@ font-size: larger;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    scroll-margin-top:0 ;
   }
 
   .måltid-image {
