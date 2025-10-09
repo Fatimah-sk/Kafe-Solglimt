@@ -294,7 +294,7 @@ hr{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    scoll-margin-top:11rem
+    scoll-margin-top:11rem;
   }
 
   img {
