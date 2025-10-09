@@ -26,6 +26,8 @@ header{
     width: 100%;
     top: 0;
     left: 0;    
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
 }
 .head{
     margin-top: 20px;
@@ -61,13 +63,19 @@ ul{
 }
 #dagensrett{
     position:relative;
+    scroll-margin-top:8.75remx;
 }
 #dagensrett img{
     width: 650px;
-    height: 600px;
+    height: 500px;
     border-radius: 15px;
     display: block;
     margin: 20px;
+     cursor: pointer;
+}
+#dagensrett img:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
 }
 .beskrivelse-dagensrett{
      background-color:rgb(241, 214, 180);
@@ -81,10 +89,6 @@ ul{
      bottom: 0px;
      left:0px;
      margin: 20px;
-
- }
- .beskrivelse-dagensrett h1 h2{
-    margin-bottom: 0;
  }
 .meny{
     background-color:rgb(241, 214, 180) ;
@@ -93,7 +97,7 @@ ul{
     margin: 10px;
     text-align: center;
     padding-bottom: 20px;
-    scroll-margin-top: 130px;
+    scroll-margin-top: 8.25rem;
 }
 .meny h2{
     text-align: center;
@@ -121,13 +125,17 @@ ul{
     text-align: left;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
+.måltid:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-    scroll-margin-top:130px ;
+    scroll-margin-top:8.25rem ;
 
 }
 .main{
@@ -142,9 +150,7 @@ main{
     display: flex;
     flex-direction: column;
 }
-#dagensrett{
-    scroll-margin-top:140px;
-}
+
 footer{
     color:rgb(71, 38, 14);
     text-align: center;
@@ -171,7 +177,7 @@ footer a{
     display: flex;
     flex-direction: column;
     color: antiquewhite;
-    scroll-margin-top: 130px;
+    scroll-margin-top: 8.25rem;
 }
 .container h1{
     margin-top: 10px;
@@ -204,6 +210,11 @@ footer a{
     cursor: pointer;
     position: relative;
 }
+
+.bg-måltid :hover {
+    transform: scale(1.08);
+    transition: transform 0.3s ease;
+}
 .måltid-beskrivelse{
      background-color:antiquewhite;
      color: rgb(71, 38, 14);
@@ -219,7 +230,7 @@ footer a{
      font-family: "Playfair Display", serif;
 }
 #kontakt{
-    scroll-margin-top: 125px;
+    scroll-margin-top: 7.81rem;
 }
 
 
@@ -242,7 +253,7 @@ footer a{
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
-  scroll-margin-top: 150px;
+  scroll-margin-top: 9.37rem;
 }
 .måltid-item:nth-child(even) {
   flex-direction: row-reverse;
@@ -276,59 +287,104 @@ hr{
 
 
 
-/* ==== Responsiv visning for mobil (bevarer rekkefølge) ==== */
+/* Responsiv visning for mobil */
 @media (max-width: 768px) {
 
-  /* يخلي كل العناصر تصير بعمود واحد */
   body, main, .alle-måltider, .måltid-item, .måltider, .måltid-boks {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  /* يخلي الصور تاخد عرض أصغر من الشاشة */
   img {
     max-width: 90%;
     height: auto;
   }
 
-  /* النصوص تاخد عرض الشاشة بدون تزاحم */
   .måltid-text, .beskrivelse-dagensrett, .måltid-beskrivelse {
     max-width: 95%;
     text-align: center;
   }
 
-  /* تعديل شريط التنقل */
   nav ul {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    margin: 10px 0;
+    gap: 1rem;
+    margin: 1rem 0;
   }
 
   .head {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin-left: 0;
   }
 
   .logo img {
-    width: 80px;
+    width: 5rem;
   }
 
-  /* تقليل الحشوات والمسافات الكبيرة */
   .alle-måltider {
-    padding: 20px;
-    gap: 30px;
+    padding: 1.25rem;
+    gap: 1.875rem;
   }
 
   .måltid-image img {
-    width: 300px;
+    width: 18.75rem;
     height: auto;
   }
 
   footer img {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
   }
+
+  #kontakt{
+    scroll-margin-top: 11rem;
+  }
+  .main{
+     scroll-margin-top: 20rem;
+  }
+  .container{
+    scroll-margin-top: 11rem;
+
+  }
+
+
+  .alle-måltider {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .måltid-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    scroll-margin-top:20rem;
+  }
+
+  .måltid-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .måltid-image img {
+    width: 100%;
+    height: auto;
+    max-width: 25rem; 
+  }
+
+  .måltid-text {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .måltid-item:nth-child(even) {
+    flex-direction: column; 
+  }
+
+
 }
