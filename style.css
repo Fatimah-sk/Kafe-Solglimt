@@ -511,6 +511,7 @@ font-size: larger;
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top:0;
 }
 .bursdag-tjenester img{
   border-radius: 1rem;
